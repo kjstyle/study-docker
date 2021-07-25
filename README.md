@@ -1,4 +1,5 @@
-## docker 설치
+docker 설치
+====
 * [Docker Download](https://hub.docker.com/editions/community/docker-ce-desktop-mac )
   * M1은 실리콘칩
   * M1이 아니면 
@@ -43,7 +44,10 @@ alpine/git          latest    b8f176fa3f0d   2 months ago    25.1MB
 ![Getting_Started](https://user-images.githubusercontent.com/21075371/126887413-b7c7b287-307b-4c6a-a374-8546f3f758d6.jpg)
   15. tutorial을 포함한 install과정은 여기까지..
 
-## docker 기본 명령어
+
+
+docker 기본 명령어
+===
 ### docker ps
 ```bash
 kjstyleui-MacBook-Pro:~ kjstyle$ docker ps -a
