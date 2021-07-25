@@ -1,6 +1,7 @@
 ## docker 설치
 * [Docker Download](https://hub.docker.com/editions/community/docker-ce-desktop-mac )
-
+  * M1은 실리콘칩
+  * M1이 아니면 
 <img src="https://user-images.githubusercontent.com/21075371/126887134-c4f3117f-8d8a-43f9-ab89-67deb77f15ab.jpg" width="200" />
 
   1. dmg 파일로 더블클릭 -> 설치 시작
