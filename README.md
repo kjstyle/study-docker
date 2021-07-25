@@ -1,6 +1,7 @@
 ## docker 설치
 * [Docker Download](https://hub.docker.com/editions/community/docker-ce-desktop-mac )
-  1. dmg 파일로 더블클릭 -> 설치 시작 
+![Docker_Desktop_for_Mac_by_Docker___Docker_Hub](https://user-images.githubusercontent.com/21075371/126887134-c4f3117f-8d8a-43f9-ab89-67deb77f15ab.jpg)
+  1. dmg 파일로 더블클릭 -> 설치 시작
   2. 드래그해서 application directory로 이동
   3. application icon 을 double click
   4. 2021.06.25 기준으로 mac os 11이상이어야 docker설치가 가능하다고함
