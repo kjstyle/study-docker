@@ -12,7 +12,7 @@
 ![Tutorial](https://user-images.githubusercontent.com/21075371/126887113-4c9c5dcd-a975-4918-9dd2-d41eda8fdae0.jpg)
   7. 좌측 샘플 커맨드의 역슬래시는 한줄로 입력해야하지는 표기상 개행으로 할게..라는 의미라서 걍 한줄로 치면 됨
   8. 아래는 첫번째 커맨드 실행 결과이다. 역슬래시 없이 그냥 한줄로 입력했고, 로컬 repository에 image가 없으니 lastes를 pull받을게.. download하고 cloning할게...라는 로그가 찍힘
-```
+```bash
 kjstyleui-MacBook-Pro:~ kjstyle$ docker run --name repo alpine/git clone https:
 //github.com/docker/getting-started.git 
 Unable to find image 'alpine/git:latest' locally
@@ -27,7 +27,7 @@ Cloning into 'getting-started'...
   10. 현재 경로로 cp한다음, docker build를 진행... 생각보다 시간이 소요됨..
 ![Tutorial_및_다운로드](https://user-images.githubusercontent.com/21075371/126887349-1deccea0-4cd3-41d5-bbfe-350edf2f420b.jpg)
   12. docker run 함.. 옵션을 주고 host와 80:80으로 매핑..출력되는 hash값은 이미지의 hash값이겠지..
-```
+```bash
 kjstyleui-MacBook-Pro:getting-started kjstyle$ docker run -d -p 80:80 --name do
 cker-tutorial docker101tutorial 
 20cf544418bac21244e2f0b53ae2c2aa89135502044dde73c6ee240b7783474b
@@ -43,3 +43,26 @@ alpine/git          latest    b8f176fa3f0d   2 months ago    25.1MB
 ![Getting_Started](https://user-images.githubusercontent.com/21075371/126887413-b7c7b287-307b-4c6a-a374-8546f3f758d6.jpg)
   15. tutorial을 포함한 install과정은 여기까지..
 
+## docker 기본 명령어
+### docker ps
+```bash
+kjstyleui-MacBook-Pro:~ kjstyle$ docker ps -a
+CONTAINER ID   IMAGE               COMMAND                  CREATED       STATUS                   PORTS                               NAMES
+20cf544418ba   docker101tutorial   "/docker-entrypoint.…"   2 hours ago   Up 2 hours               0.0.0.0:80->80/tcp, :::80->80/tcp   docker-tutorial
+26e59a35797d   alpine/git          "git clone https://g…"   3 hours ago   Exited (0) 3 hours ago                                       repo
+```
+
+### docker stop 
+```bash
+kjstyleui-MacBook-Pro:~ kjstyle$ docker ps -a
+CONTAINER ID   IMAGE               COMMAND                  CREATED       STATUS                   PORTS                               NAMES
+20cf544418ba   docker101tutorial   "/docker-entrypoint.…"   2 hours ago   Up 2 hours               0.0.0.0:80->80/tcp, :::80->80/tcp   docker-tutorial
+26e59a35797d   alpine/git          "git clone https://g…"   3 hours ago   Exited (0) 3 hours ago                                       repo
+kjstyleui-MacBook-Pro:~ kjstyle$ docker stop 20cf544418ba
+20cf544418ba
+kjstyleui-MacBook-Pro:~ kjstyle$ docker ps -a
+CONTAINER ID   IMAGE               COMMAND                  CREATED       STATUS                     PORTS     NAMES
+20cf544418ba   docker101tutorial   "/docker-entrypoint.…"   3 hours ago   Exited (0) 5 seconds ago             docker-tutorial
+26e59a35797d   alpine/git          "git clone https://g…"   3 hours ago   Exited (0) 3 hours ago               repo
+kjstyleui-MacBook-Pro:~ kjstyle$ 
+```
