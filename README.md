@@ -14,5 +14,19 @@
   5. access 관련 질문이 나오고, 맥 암호를 입력하고 나면 도커가 실행됨
   6. 2분짜리 tutorial이 나옴. 직접 typing해서 로컬해서 테스트해볼 수 있는거라 처음이라면 따라해보는게 꾀나 유용해보임
 ![Tutorial](https://user-images.githubusercontent.com/21075371/126887113-4c9c5dcd-a975-4918-9dd2-d41eda8fdae0.jpg)
-  7. 
+  7. 좌측 샘플 커맨드의 역슬래시는 한줄로 입력해야하지는 표기상 개행으로 할게..라는 의미라서 걍 한줄로 치면 됨
+  8. 아래는 첫번째 커맨드 실행 결과이다. 역슬래시 없이 그냥 한줄로 입력했고, 로컬 repository에 image가 없으니 lastes를 pull받을게.. download하고 cloning할게...라는 로그가 찍힘
+```
+kjstyleui-MacBook-Pro:~ kjstyle$ docker run --name repo alpine/git clone https:
+//github.com/docker/getting-started.git 
+Unable to find image 'alpine/git:latest' locally
+latest: Pulling from alpine/git
+540db60ca938: Pull complete 
+9d962f943834: Pull complete 
+d8b80141431d: Pull complete 
+Digest: sha256:0590372ee83d4d0ff4f08f8d2a98b0ba413d911a2e89c1d3418a1fed9a66337c
+Status: Downloaded newer image for alpine/git:latest
+Cloning into 'getting-started'...
+```
+  10. 
 
