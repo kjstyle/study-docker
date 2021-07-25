@@ -29,5 +29,15 @@ Digest: sha256:0590372ee83d4d0ff4f08f8d2a98b0ba413d911a2e89c1d3418a1fed9a66337c
 Status: Downloaded newer image for alpine/git:latest
 Cloning into 'getting-started'...
 ```
-  10. 
+  10. 현재 경로로 cp한다음, docker build를 진행... 생각보다 시간이 소요됨..
+![Tutorial_및_다운로드](https://user-images.githubusercontent.com/21075371/126887349-1deccea0-4cd3-41d5-bbfe-350edf2f420b.jpg)
+  12. docker run 함.. 옵션을 주고 host와 80:80으로 매핑..출력되는 hash값은 이미지의 hash값이겠지..
+```
+kjstyleui-MacBook-Pro:getting-started kjstyle$ docker run -d -p 80:80 --name do
+cker-tutorial docker101tutorial 
+20cf544418bac21244e2f0b53ae2c2aa89135502044dde73c6ee240b7783474b
+```
+  13. share해봐라.. docker에 가입도 해봐라..가 마지막이지만... localhost:80 으로 docker로 80포트로 잘 떠있는지 먼저 확인.. docker로 80포트로 웹서비스 pull -> build -> run -> 확인..진행 완료
+![Getting_Started](https://user-images.githubusercontent.com/21075371/126887413-b7c7b287-307b-4c6a-a374-8546f3f758d6.jpg)
+  14. tutorial을 포함한 install과정은 여기까지..
 
