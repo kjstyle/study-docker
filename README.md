@@ -37,7 +37,14 @@ kjstyleui-MacBook-Pro:getting-started kjstyle$ docker run -d -p 80:80 --name do
 cker-tutorial docker101tutorial 
 20cf544418bac21244e2f0b53ae2c2aa89135502044dde73c6ee240b7783474b
 ```
-  13. share해봐라.. docker에 가입도 해봐라..가 마지막이지만... localhost:80 으로 docker로 80포트로 잘 떠있는지 먼저 확인.. docker로 80포트로 웹서비스 pull -> build -> run -> 확인..진행 완료
+  13. hash아닌듯.. 이미지리스트의 hash값과 다름
+```
+kjstyleui-MacBook-Pro:getting-started kjstyle$ docker images
+REPOSITORY          TAG       IMAGE ID       CREATED         SIZE
+docker101tutorial   latest    9146c87a5e36   5 minutes ago   28.2MB
+alpine/git          latest    b8f176fa3f0d   2 months ago    25.1MB
+```
+  14. share해봐라.. docker에 가입도 해봐라..가 마지막이지만... localhost:80 으로 docker로 80포트로 잘 떠있는지 먼저 확인.. docker로 80포트로 웹서비스 pull -> build -> run -> 확인..진행 완료
 ![Getting_Started](https://user-images.githubusercontent.com/21075371/126887413-b7c7b287-307b-4c6a-a374-8546f3f758d6.jpg)
-  14. tutorial을 포함한 install과정은 여기까지..
+  15. tutorial을 포함한 install과정은 여기까지..
 
