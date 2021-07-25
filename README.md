@@ -71,3 +71,35 @@ CONTAINER ID   IMAGE               COMMAND                  CREATED       STATUS
 26e59a35797d   alpine/git          "git clone https://g…"   3 hours ago   Exited (0) 3 hours ago               repo
 kjstyleui-MacBook-Pro:~ kjstyle$ 
 ```
+
+
+### docker search [찾을이미지명]
+```bash
+kjstyleui-MacBook-Pro:~ kjstyle$ docker search openjdk
+NAME                            DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
+openjdk                         OpenJDK is an open-source implementation of …   2843      [OK]       
+adoptopenjdk                    Official Images for OpenJDK + HotSpot and Op…   305       [OK]       
+adoptopenjdk/openjdk11          Docker Images for OpenJDK Version 11 binarie…   153                  
+adoptopenjdk/openjdk8           Docker Images for OpenJDK Version 8 binaries…   97                   
+adoptopenjdk/openjdk8-openj9    Docker Images for Eclipse OpenJ9 Version 8 b…   45                   
+adoptopenjdk/openjdk11-openj9   Docker Images for Eclipse OpenJ9 Version 11 …   40                   
+arm64v8/openjdk                 OpenJDK is an open-source implementation of …   32                   
+adoptopenjdk/openjdk12          Docker Images for OpenJDK Version 12 binarie…   19                   
+arm32v7/openjdk                 OpenJDK is an open-source implementation of …   17                   
+shipilev/openjdk                OpenJDK development builds                      11                   
+adoptopenjdk/openjdk13          Docker Images for OpenJDK Version 13 binarie…   10                   
+adoptopenjdk/openjdk14          Docker Images for OpenJDK Version 14 binarie…   9                    
+adoptopenjdk/openjdk15          Docker Images for OpenJDK Version 15 binarie…   8                    
+adoptopenjdk/openjdk16          Docker Images for OpenJDK Version 16 binarie…   7                    
+amd64/openjdk                   OpenJDK is an open-source implementation of …   4                    
+adoptopenjdk/openjdk10          Docker Images for OpenJDK Version 10 binarie…   3                    
+adoptopenjdk/openjdk9           Docker Images for OpenJDK Version 9 binaries…   2                    
+classmethod/openjdk-with-git    docker image for openjdk and git                1                    [OK]
+symphonicsoft/openjdkbase       Openjdk base images with dumb-init              1                    
+ccitest/openjdk                 CircleCI test images for OpenJDK                1                    [OK]
+winamd64/openjdk                OpenJDK is an open-source implementation of …   1                    
+suranagivinod/openjdk8          openjdk:8-jre-slim, zip & unzip                 0                    
+cimg/openjdk                    The CircleCI OpenJDK (Java) Docker Convenien…   0                    
+cfje/openjdk                    OpenJDK Builder Image                           0                    
+ccistaging/openjdk              CircleCI images for OpenJDK                     0                    [OK]
+```
