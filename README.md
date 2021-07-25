@@ -52,6 +52,7 @@ CONTAINER ID   IMAGE               COMMAND                  CREATED       STATUS
 26e59a35797d   alpine/git          "git clone https://g…"   3 hours ago   Exited (0) 3 hours ago                                       repo
 ```
 
+
 ### docker stop 
 ```bash
 kjstyleui-MacBook-Pro:~ kjstyle$ docker ps -a
