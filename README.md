@@ -1,6 +1,6 @@
 ## docker 설치
 * [Docker Download](https://hub.docker.com/editions/community/docker-ce-desktop-mac )
-![Docker_Desktop_for_Mac_by_Docker___Docker_Hub](https://user-images.githubusercontent.com/21075371/126887134-c4f3117f-8d8a-43f9-ab89-67deb77f15ab.jpg)
+<img src="https://user-images.githubusercontent.com/21075371/126887134-c4f3117f-8d8a-43f9-ab89-67deb77f15ab.jpg" width=200>
   1. dmg 파일로 더블클릭 -> 설치 시작
   2. 드래그해서 application directory로 이동
   3. application icon 을 double click
